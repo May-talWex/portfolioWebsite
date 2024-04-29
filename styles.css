@@ -1,0 +1,199 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.section {
+    height: 100vh; /* Makes the section fill the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+    align-items: center; /* Horizontally centers the content */
+    padding: 15px; /* Optional: to ensure there is some space around the content */
+    box-sizing: border-box; /* Ensures padding does not affect the overall dimensions of the element */
+    background-color: #020912;
+    color: #fff;
+}
+
+.bg-custom{
+    background-color: #98E8CD !important;
+}
+
+#opening_page{
+    background-image: url('opening_page_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 70px 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start of the container (left side) */
+    justify-content: center; /* Centers the content vertically */
+    box-sizing: border-box;
+    background-color: #000; /* Background color */
+    color: #fff; /* Text color */
+    padding-left: 5%;
+}
+
+.home-title{
+    margin-top: auto;
+}
+
+.home-button{
+    margin-top: auto;
+}
+
+#first_name{
+    color: #98E8CD;
+}
+
+.contact-button{
+    background-color: #000;
+    color: white;
+    border: 2px solid #98E8CD;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+#about_page{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 70px 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start of the container (left side) */
+    justify-content: center; /* Centers the content vertically */
+    box-sizing: border-box;
+    padding-left: 5%;
+}
+
+.about-title{
+    color:#98E8CD;
+    font-size: x-large;
+}
+
+.about-text{
+    width: 95%;
+    font-size: larger;
+}
+.about-image{
+    width: 95%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#background_page{
+    background-image: url('skills_page_bg.png');
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+    max-width: 100%;
+}
+
+.background-title {
+    margin-right: 50px; 
+    flex-basis: 20%; 
+    text-align: left;
+    align-self: start;
+    color: #98E8CD;
+    margin-top: 50px;
+}
+
+.background-container {
+    /* This will lay out the education and skills sections vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-self: flex-end;
+}
+
+.education-container, .skills-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the start (left) */
+    align-items: center;
+    width: 100%; /* Sets the width to take the full width available */
+    margin-bottom: 20px; /* Adds space between education and skills sections */
+}
+
+.title-left {
+    min-width: 150px;
+    color: #98E8CD;
+    display: flex;
+    align-self: flex-start;
+    font-size: 1.5em
+}
+
+.text-right, .skills-list.text-right {
+    text-align: left;
+    flex-grow: 1;
+    font-size: 1.2em;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list li::before {
+    content: "• ";
+    margin-right: 5px; /* Adds space between the bullet and the text */
+}
+
+/* Responsive adjustments with media queries */
+@media (max-width: 768px) {
+    #background_page {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .credentials-container {
+        align-items: flex-start;
+    }
+
+    .education-container, .skills-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title-left {
+        min-width: auto; /* Allows the title to fit content width on smaller screens */
+    }
+
+    .text-right, .skills-list.text-right {
+        text-align: left;
+    }
+}
+
+#contact_page{
+    background-image: url('contact_page_bg.png');
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.contact-page-text{
+    font-size: xx-large;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#contact-text{
+    color: #98E8CD;
+    font-size: x-large;
+}
+
